@@ -273,16 +273,6 @@ class Baskerculte{
 		// Post formats
 		add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
 
-		// Custom header
-		$args = array(
-			'width'         => 1440,
-			'height'        => 221,
-			'default-image' => get_template_directory_uri() . '/images/header.jpg',
-			'uploads'       => true,
-			'header-text'  	=> false
-		);
-		add_theme_support( 'custom-header', $args );
-		
 		// Add support for title_tag
 		add_theme_support( 'title-tag' );
 

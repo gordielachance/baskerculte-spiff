@@ -61,7 +61,7 @@
                 ?>
             <?php if (cc_blog_query()->have_posts()) : ?>
             
-                <div class="posts polaroid-posts">
+                <div class="posts grid-posts polaroid-posts">
 
                 <?php while (cc_blog_query()->have_posts()) : cc_blog_query()->the_post(); ?>
 

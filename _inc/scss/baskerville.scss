@@ -182,10 +182,10 @@ body a {
 
 .section-inner {
   max-width: 90%;
-  width: 1400px;
+  width: 1000px;
   margin: 0 auto;
   &.content {
-    width: 1440px;
+    width: 1040px;
     max-width: 92.6%;
   }
   &.wide {
@@ -295,16 +295,17 @@ header {
 
 
 .main-menu {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 0.9em;
-  text-align: center;
-  li {
-    position: relative;
-    &:hover > a {
-      cursor: pointer;
-      color: #fff;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    @include display-flex();
+    li {
+        position: relative;
+        &:hover > a {
+            cursor: pointer;
+            color: #fff;
+        }
     }
-  }
   > {
     li {
       float: left;
@@ -494,15 +495,15 @@ header {
     margin:auto;
     overflow: visible !important;
     &.grid-posts{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: .5em;
-        grid-row-gap:.5em;
+        @include display-flex();
+        flex-wrap: wrap;
+        justify-content: center;
+        .post-container{
+            width: calc(100% / 3);
+            box-sizing: border-box;
+        }
         &.polaroid-posts{
 
-        }
-        .post-container{
-            margin:auto;
         }
     }
 }
