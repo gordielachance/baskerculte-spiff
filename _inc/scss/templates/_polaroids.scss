@@ -37,16 +37,19 @@
             padding:20px;
             box-sizing: border-box;
 
-            > .cc-polaroid-content {
+            .cc-polaroid-content {
+                height:100%;
                 @extend .curved-paper-shadow;
+                padding: 1.6em;
                 background: #fff;
 
                 margin:auto;
                 position: relative;
                 //background-color:$timeline_bg_color;
-                padding: 1.6em;
+                
 
                 header{
+                    padding:0;
                     padding-bottom:1em;
                     font-family:'IM Fell English', serif;
                     text-align:center;

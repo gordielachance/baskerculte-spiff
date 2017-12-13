@@ -67,29 +67,7 @@
                                     <div class="post-container">
 
                                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-                                                <figure>
-                                                    <?php if ( has_post_thumbnail() ) : ?>
-                                                        <?php the_post_thumbnail('post-thumbnail-portfolio'); ?>
-                                                    <?php endif; ?>
-                                                    <figcaption>
-                                                    <h3 class="post-title"><?php the_title(); ?></h3>
-                                                    <?php $categories = get_the_category();
-                                                    if ($categories){
-                                                        $cats = array();
-                                                        foreach ($categories as $category){
-                                                            $cats[] = $category->name;
-                                                        }
-                                                        ?>
-                                                        <span class="hentry-categories"><small>dans </small><?php echo implode(", ",$cats);?></span>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-
+                                            <?php get_template_part( 'content-portfolio', get_post_format() ); ?>
                                         </article> <!-- /post -->
 
                                     </div>

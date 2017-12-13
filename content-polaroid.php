@@ -1,21 +1,4 @@
 <div class="cc-polaroid-content">
-    <header>
-        <span class="post-date"><?php the_time( 'Y/m/d' ); ?></span>
-        <div class="post-meta">
-            <?php $categories = get_the_category();
-            if ($categories){
-                $cats = array();
-                foreach ($categories as $category){
-                    $cats[] = $category->name;
-                }
-                ?>
-                <span class="hentry-categories"><i class="fa fa-folder" aria-hidden="true"></i> <?php echo implode(", ",$cats);?></span>
-                <?php
-            }
-            ?>
-        </div>
-    </header>
-
     <figure>
         <?php if ( has_post_thumbnail() ) : ?>
             <div class="featured-media">
@@ -27,14 +10,29 @@
         <?php endif; ?>
     </figure>
     <figcaption>
+        <header>
+            <div class="post-metas portfolio-post-metas">
+                <p class="post-meta post-date"><?php the_time( 'Y/m/d' ); ?></span>
+                <p class="term-metas">
+                    <?php 
+                    if ( has_category() ) {
+                        ?>
+                        <span class="post-meta post-categories"><?php the_category(', '); ?></span>
+                        <?php
+                    }
+                    if ( has_tag() ) {
+                        ?>
+                        <span class="post-meta post-tags"><?php the_tags('', ', '); ?></span>
+                        <?php 
+                    } 
+                    ?>
+                </p>
+            </div>
+        </header>
         <!-- post title -->
         <?php if ( get_the_title() ) : ?>
-            <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+        <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
         <?php endif; ?>
         <!-- /post title -->
-        <div class="post-excerpt">
-            <?php the_excerpt( 100 ); ?>
-        </div><!-- .post-excerpt -->
     </figcaption>
-
 </div>

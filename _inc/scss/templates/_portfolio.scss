@@ -7,7 +7,8 @@
     .posts{
         .post-container{
             .hentry{
-                position:relative;
+                padding:.5em;
+                background:none;
                 width:100%;
                 height:100%;
                 @include border-radius(0);
@@ -30,6 +31,7 @@
                         background-color:$color-bg;
                         padding:2em;
                         .post-title{
+                            text-align:center;
                             font-family: 'Roboto Slab', sans-serif;
                             font-size: 1em;
                             line-height: 1em;
@@ -42,12 +44,23 @@
                             text-overflow: ellipsis; 
                             //white-space: nowrap;  
                         }
-                        .hentry-categories{
-                            small{
-                                color:#2B3542;
-                                font-size:0.8em;
+                        
+                        .portfolio-post-metas{
+                            .post-categories{
+                                clear:both;
+                                display:block;
+                                text-align:center;
+                            }
+                            .post-tags{
+                                clear:both;
+                                display:block;
+                                text-align:center;
+                                margin-top:.5em;
                             }
                         }
+                            
+
+
                         @include transition(all 0.2s ease-out);
                     }
                 }

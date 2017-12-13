@@ -117,10 +117,6 @@
       background-image: url(../images/icons/2x/image-g.png);
     }
 
-    .single-attachment .post-author:before {
-      background-image: url(../images/icons/2x/image-w.png);
-    }
-
     .searchform .searchsubmit {
       background-image: url(../images/icons/2x/spyglass-g.png);
       &:hover {
@@ -239,27 +235,7 @@
 	
 	
 	/* single post */
-	
-    .post-author {
-      width: 100%;
-      float: none;
-      border-radius: 0;
-    }
 
-    .single {
-      .post-meta {
-        width: 100%;
-        float: none;
-        border-radius: 0;
-      }
-      .post-meta-container:after {
-        content: none;
-      }
-      .post-meta {
-        background-color: #3F4854;
-      }
-    }
-	
 	/* post content */
 	
     .post-content {
@@ -572,19 +548,6 @@
             }
         }
     }
-
-	/* post meta */
-	
-    .post-author {
-      &:before, &:after {
-        left: 15px;
-      }
-    }
-
-    .post-author-content {
-      margin-left: 40px;
-    }
-	
 	/* comments */
 	
     .comments div.comment {
