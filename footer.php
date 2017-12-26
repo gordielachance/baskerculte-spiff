@@ -1,3 +1,6 @@
+ 	
+    </div><!-- .section-inner -->  
+</div><!-- .wrapper -->
 <div class="footer section medium-padding bg-graphite">
 	
 	<div class="section-inner row">

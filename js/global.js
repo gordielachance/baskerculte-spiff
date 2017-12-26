@@ -18,13 +18,6 @@ jQuery(document).ready(function($) {
 		$blocks.masonry();
 	});
 
-
-	// Toggle mobile-menu
-	$(".nav-toggle").on("click", function(){	
-		$(this).toggleClass("active");
-		$(".mobile-navigation").slideToggle();
-	});
-    
     //Toggle nav search
     $('body.search-results').find('header .searchform').addClass('expanded');
 	$("header .searchsubmit").on("hover", function(e){
@@ -35,18 +28,7 @@ jQuery(document).ready(function($) {
             form.addClass('expanded');
         }
 	});
-    
-    
-	
-	// Show mobile-menu > 1000
-	$(window).resize(function() {
-		if ($(window).width() > 1000) {
-			$(".nav-toggle").removeClass("active");
-			$(".mobile-navigation").hide();
-		}
-	});
-	
-	
+
 	// Load Flexslider
     $(".flexslider").flexslider({
         animation: "slide",

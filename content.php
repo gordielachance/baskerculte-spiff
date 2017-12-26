@@ -31,5 +31,3 @@
 </div><!-- .post-excerpt -->
 
 <?php baskerculte_meta(); ?>
-            
-<div class="clear"></div>

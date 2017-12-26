@@ -7,11 +7,7 @@
 	
 ?>
 
-<div class="wrapper section medium-padding">
-										
-	<div class="section-inner">
-	
-		<div class="content fleft">
+<div class="content fleft">
 												        
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
@@ -193,13 +189,5 @@
 			</article> <!-- /post -->
 		
 		</div> <!-- /content -->
-		
-		<?php get_sidebar(); ?>
-		
-		<div class="clear"></div>
-		
-	</div> <!-- /section-inner -->
-
-</div> <!-- /wrapper -->
 		
 <?php get_footer(); ?>

@@ -88,7 +88,6 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 ROTATION
 *********************/
-@import "https://fonts.googleapis.com/css?family=IM+Fell+English:400,400i";
 @font-face {
   font-family: '04b_19regular';
   src: url("../fonts/04b_19/04b_19__-webfont.eot");
@@ -215,430 +214,8 @@ small {
 /* -------------------------------------------------------------------------------- */
 /*	Templates
 /* -------------------------------------------------------------------------------- */
-/* line 5, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container {
-  padding: 0;
-}
-/* line 8, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n) {
-  transform: rotate(-0.25deg);
-}
-/* line 11, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+1) {
-  transform: rotate(-0.5deg);
-}
-/* line 14, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+2) {
-  transform: rotate(-1deg);
-}
-/* line 17, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+3) {
-  transform: rotate(0.25deg);
-}
-/* line 21, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+4) {
-  transform: rotate(1deg);
-}
-/* line 24, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+5) {
-  transform: rotate(-0.75deg);
-}
-/* line 27, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+6) {
-  transform: rotate(0.75deg);
-}
-/* line 30, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container:nth-child(8n+7) {
-  transform: rotate(0.5deg);
-}
-/* line 34, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article {
-  position: relative;
-  background: none;
-  padding: 20px;
-  box-sizing: border-box;
-}
-/* line 40, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content {
-  height: 100%;
-  padding: 1.6em;
-  background: #fff;
-  margin: auto;
-  position: relative;
-}
-/* line 51, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content header {
-  padding: 0;
-  padding-bottom: 1em;
-  font-family: 'IM Fell English', serif;
-  text-align: center;
-}
-/* line 56, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content header .post-date {
-  display: block;
-}
-/* line 59, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content header .post-meta {
-  text-align: center;
-  display: block;
-  color: #CCC;
-}
-/* line 66, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content .post-title {
-  text-align: center;
-  font-family: 'Roboto Slab', sans-serif;
-  margin: .5em 0;
-}
-/* line 72, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content .post-meta {
-  background: none;
-}
-/* line 76, ../scss/templates/_polaroids.scss */
-.posts.polaroid-posts .post-container article .cc-polaroid-content .entry-excerpt {
-  font-size: .8em;
-}
-
-/* line 89, ../scss/templates/_polaroids.scss */
-.paper-shadow, .curved-paper-shadow, .posts.polaroid-posts .post-container article .cc-polaroid-content {
-  border: 1px solid #efefef;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.05) inset;
-}
-
-/* line 96, ../scss/templates/_polaroids.scss */
-.curved-paper-shadow:before, .posts.polaroid-posts .post-container article .cc-polaroid-content:before, .curved-paper-shadow:after, .posts.polaroid-posts .post-container article .cc-polaroid-content:after {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  bottom: 10px;
-  width: 70%;
-  max-width: 300px;
-  /* avoid rotation causing ugly appearance at large container widths */
-  max-height: 100px;
-  height: 55%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-/* line 110, ../scss/templates/_polaroids.scss */
-.curved-paper-shadow:before, .posts.polaroid-posts .post-container article .cc-polaroid-content:before {
-  transform: skew(-15deg) rotate(-3deg);
-  left: 10px;
-}
-/* line 116, ../scss/templates/_polaroids.scss */
-.curved-paper-shadow:after, .posts.polaroid-posts .post-container article .cc-polaroid-content:after {
-  clear: both;
-  left: auto;
-  right: 10px;
-  transform: skew(15deg) rotate(3deg);
-}
-
-/* line 2, ../scss/templates/_contacts.scss */
-.page-id-98 .post-content {
-  position: relative;
-  padding-top: 350px;
-}
-/* line 5, ../scss/templates/_contacts.scss */
-.page-id-98 .post-content iframe {
-  width: 100% !important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 300px;
-  border: 0;
-}
-
-/* line 2, ../scss/templates/_cv.scss */
-.page-id-2967 #cv #cv-download {
-  text-align: right;
-  margin-bottom: 2em;
-}
-/* line 5, ../scss/templates/_cv.scss */
-.page-id-2967 #cv #cv-download a {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.2em;
-  line-height: 120%;
-  font-weight: 700;
-}
-/* line 12, ../scss/templates/_cv.scss */
-.page-id-2967 #cv a {
-  color: #333;
-  text-decoration: none;
-}
-/* line 16, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_tag {
-  display: inline-block;
-  padding: 5px;
-  background: #BBB;
-  font-size: 0.6em;
-  line-height: 1;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-}
-/* line 25, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-/* line 31, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section ul li {
-  margin: 0;
-  padding: 0;
-}
-/* line 37, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section h3.cv_section_title {
-  float: left;
-  width: 160px;
-  color: #c4c4c4;
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 0.8em;
-  line-height: 120%;
-  font-weight: 700;
-  margin: 0;
-  margin-top: 10px;
-}
-/* line 49, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line {
-  margin-left: 160px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  border-left: 1px dotted #C4C4C4;
-}
-/* line 54, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line:last-child {
-  padding-bottom: 0px;
-}
-/* line 57, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line .cv_line_head {
-  display: block;
-}
-/* line 59, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line .cv_line_head h4.cv_title {
-  font-weight: bold;
-  font-size: 1.4em;
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1em;
-  line-height: 120%;
-  font-weight: 700;
-  display: inline;
-  margin: 0;
-}
-/* line 69, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line .cv_line_head h4.cv_title a:after {
-  font-family: FontAwesome;
-  content: "\f0fe";
-  font-size: 0.7em;
-  margin-left: 0.5em;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
-}
-/* line 80, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line .cv_line_head .cv_date {
-  color: #c4c4c4;
-  float: right;
-  font-size: 0.8em;
-}
-/* line 84, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line .cv_line_head .cv_date:before {
-  content: " / ";
-}
-/* line 91, ../scss/templates/_cv.scss */
-.page-id-2967 #cv .cv_section .cv_line .cv_line_content .cv_company {
-  font-style: italic;
-}
-
-/* line 2, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark {
-  position: relative;
-}
-/* line 6, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark img {
-  vertical-align: top;
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-/* line 12, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark figure {
-  margin: 0;
-  padding: 0;
-}
-/* line 16, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark figcaption {
-  padding: 1em;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: -30px;
-  background: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-/* line 27, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark figcaption .bookmark-title {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.25em;
-  line-height: 120%;
-  font-weight: 700;
-  color: #2B3542;
-  word-break: break-word;
-  margin-bottom: 10px;
-}
-/* line 36, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark figcaption .bookmark-category {
-  display: block;
-  margin-bottom: 5px;
-}
-/* line 40, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark figcaption .bookmark-description {
-  font-size: 0.9em;
-  color: black;
-}
-/* line 46, ../scss/templates/_links.scss */
-#cc-links .cc-bookmark:hover figcaption {
-  bottom: 0;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-/* line 1, ../scss/templates/_loop-films.scss */
-.cc-films-loop {
-  padding-top: 30px;
-  border-top: 1px solid #DDD;
-}
-/* line 4, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry {
-  font-size: 0.7em;
-  position: relative;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
-}
-/* line 9, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry a {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  min-height: 100px;
-  display: block;
-}
-/* line 14, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry a .post-thumbnail {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-/* line 20, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry a .post-thumbnail img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-/* line 26, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry a .post-excerpt {
-  margin-left: 100px;
-  padding: 10px;
-  padding-left: 20px;
-}
-/* line 30, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry a .post-excerpt .post-title {
-  margin: 0;
-}
-/* line 34, ../scss/templates/_loop-films.scss */
-.cc-films-loop .hentry a:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-/* line 3, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .post.notice .post-header {
-  display: none;
-}
-/* line 9, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry {
-  padding: .5em;
-  background: none;
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-}
-/* line 16, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry figure {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 21, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry figure img {
-  vertical-align: top;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-/* line 27, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry figure figcaption {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #f3f1e6;
-  padding: 2em;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-/* line 33, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry figure figcaption .post-title {
-  text-align: center;
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1em;
-  line-height: 1em;
-  font-weight: 700;
-  color: #2B3542;
-  word-break: break-word;
-  margin-bottom: 1em;
-  max-height: 3em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-/* line 49, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry figure figcaption .portfolio-post-metas .post-categories {
-  clear: both;
-  display: block;
-  text-align: center;
-}
-/* line 54, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry figure figcaption .portfolio-post-metas .post-tags {
-  clear: both;
-  display: block;
-  text-align: center;
-  margin-top: .5em;
-}
-/* line 69, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry.has-post-thumbnail figure figcaption {
-  bottom: -20%;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-/* line 73, ../scss/templates/_portfolio.scss */
-.page-template-template-portfolio .posts .post-container .hentry.has-post-thumbnail:hover figure figcaption {
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-  bottom: 0;
-}
-
 /* filtering posts menu*/
-/* line 138, ../scss/cargoculte.scss */
+/* line 132, ../scss/cargoculte.scss */
 hr.dashed {
   border: 0;
   border-bottom: 1px dashed #cdcdcd;
@@ -646,33 +223,33 @@ hr.dashed {
   margin-bottom: 20px;
 }
 
-/* line 145, ../scss/cargoculte.scss */
+/* line 139, ../scss/cargoculte.scss */
 #posts-filter {
   margin-bottom: 20px;
 }
 
-/* line 149, ../scss/cargoculte.scss */
+/* line 143, ../scss/cargoculte.scss */
 .dropit {
   display: none;
 }
-/* line 152, ../scss/cargoculte.scss */
+/* line 146, ../scss/cargoculte.scss */
 .dropit
 a {
   color: #444;
 }
-/* line 157, ../scss/cargoculte.scss */
+/* line 151, ../scss/cargoculte.scss */
 .dropit strong {
   color: #13C4A5;
 }
-/* line 161, ../scss/cargoculte.scss */
+/* line 155, ../scss/cargoculte.scss */
 .dropit .dropit-submenu {
   margin-top: 10px;
 }
-/* line 163, ../scss/cargoculte.scss */
+/* line 157, ../scss/cargoculte.scss */
 .dropit .dropit-submenu li {
   width: 200px;
 }
-/* line 165, ../scss/cargoculte.scss */
+/* line 159, ../scss/cargoculte.scss */
 .dropit .dropit-submenu li a {
   width: 100%;
   height: 100%;
@@ -682,12 +259,12 @@ a {
   padding: 20px;
   padding-left: 40px;
 }
-/* line 173, ../scss/cargoculte.scss */
+/* line 167, ../scss/cargoculte.scss */
 .dropit .dropit-submenu li a:hover {
   background-color: whitesmoke;
 }
 
-/* line 182, ../scss/cargoculte.scss */
+/* line 176, ../scss/cargoculte.scss */
 .footer #about-link {
   display: block;
   text-align: right;
@@ -695,7 +272,7 @@ a {
   padding-right: 20px;
   margin-top: 10px;
 }
-/* line 190, ../scss/cargoculte.scss */
+/* line 184, ../scss/cargoculte.scss */
 .footer #networks a {
   font-size: 2.5em;
   padding-right: 5px;
@@ -705,29 +282,29 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 196, ../scss/cargoculte.scss */
+/* line 190, ../scss/cargoculte.scss */
 .footer #networks a:hover {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-/* line 202, ../scss/cargoculte.scss */
+/* line 196, ../scss/cargoculte.scss */
 .credits-right {
   display: none;
 }
 
-/* line 206, ../scss/cargoculte.scss */
+/* line 200, ../scss/cargoculte.scss */
 .post.notice {
   background: none;
 }
-/* line 208, ../scss/cargoculte.scss */
+/* line 202, ../scss/cargoculte.scss */
 .post.notice .post-header {
   padding: 0;
   margin-bottom: 20px;
   text-align: center;
   height: auto;
 }
-/* line 214, ../scss/cargoculte.scss */
+/* line 208, ../scss/cargoculte.scss */
 .post.notice .post-header .post-title {
   display: inline-block;
   padding-bottom: 4px;
@@ -738,7 +315,7 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 225, ../scss/cargoculte.scss */
+/* line 219, ../scss/cargoculte.scss */
 .post.notice .post-content {
   padding: 0;
   margin: 0;

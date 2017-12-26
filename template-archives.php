@@ -5,12 +5,7 @@ Template Name: Archive template
 ?>
 
 <?php get_header(); ?>
-
-<div class="wrapper section medium-padding">						
-
-	<div class="section-inner">
-
-		<div class="content fleft">
+<div class="content fleft">
 					
 			<div class="post">
 			
@@ -144,14 +139,5 @@ Template Name: Archive template
 	
 			</div><!-- .post -->
 				
-		</div><!-- .content -->
-		
-		<?php get_sidebar(); ?>
-	
-		<div class="clear"></div>
-	
-	</div><!-- .section-inner -->
-	
-</div><!-- .wrapper section-inner -->
-								
+		</div><!-- .content -->						
 <?php get_footer(); ?>
